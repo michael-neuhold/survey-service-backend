@@ -2,10 +2,12 @@ package clc
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @SpringBootApplication
+@EnableMongoRepositories
 class SurveyServiceBackendApplication
 
 fun main(args: Array<String>) {
@@ -19,6 +21,7 @@ class MessageResource {
         Message("1", "Hello!"),
         Message("2", "Bonjour!"),
         Message("3", "Privet!"),
+        Message("4", "Hi Julian!"),
     )
 }
 

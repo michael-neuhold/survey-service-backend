@@ -9,10 +9,10 @@
 - In GCP -> IAM -> <projectname>@appspot.gserviceacount.com -> add new role "Secret Manager Secret Accessor" otherwise secret can not be read
 
 ## Todos:
-- [ ] Create Document Types Survey and Response [see this](./_doc)
-- [ ] Create Business Logic CRUD operations + analytics
-- [x] Create Dev Mongo Instance 
-- [ ] Create Postgres Db in GCP
-- [ ] Create Dev Postgres Instance
-- [ ] Create Add Swagger Doc
-- [ ] Frontend Project
+- [x] Create Dev Mongo Instance
+- [ ] Julian: Create Document Types Survey and Response [see this](./_doc)
+- [ ] Julian: Create Business Logic CRUD operations + analytics
+- [ ] Michi: Create Postgres Db in GCP
+- [ ] Michi: Create Dev Postgres Instance
+- [ ] Michi: Create Add Swagger Doc
+- [ ] Michi: Frontend Project

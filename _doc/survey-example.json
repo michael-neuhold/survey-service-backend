@@ -1,0 +1,27 @@
+{
+  "id": 111,
+  "author": "username",
+  "title": "My Survey",
+  "description": "Some useful text",
+  "questions": [
+    {
+      "qid": 1,
+      "text": "Termin dd.mm.yyyy",
+      "options": [
+        "Yes", 
+        "No"
+      ]
+    },
+    {
+      "qid": 2,
+      "text": "Termin dd.mm.yyyy",
+      "options": [
+        "Yes", 
+        "No"
+      ]
+    }
+  ],
+  "responses": [
+    222
+  ]
+}

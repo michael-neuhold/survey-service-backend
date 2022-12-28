@@ -1,0 +1,15 @@
+{
+  "id": 222,
+  "author": "username",
+  "relatesTo": 111,
+  "answers": [
+    {
+      "qid": 1,
+      "answer": "Yes"
+    },
+    {
+      "qid": 2,
+      "answer": "Yes"
+    }
+  ]
+}

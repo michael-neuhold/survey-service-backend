@@ -34,4 +34,5 @@ class SurveyController(private val surveyRepository: SurveyRepository) {
         val createdSurvey = surveyRepository.save(survey);
         return ResponseEntity.ok(createdSurvey);
     }
+
 }

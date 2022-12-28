@@ -2,6 +2,7 @@ package clc.inbound
 
 import clc.outbound.SurveyRepository
 import clc.shared.Survey
+import clc.shared.SurveyPostRequestDto
 import org.bson.types.ObjectId
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
@@ -29,9 +30,9 @@ class SurveyController(private val surveyRepository: SurveyRepository) {
     }
 
     @PostMapping
-    fun postSurvey(@RequestBody survey: Survey): ResponseEntity<Survey> {
+    fun postSurvey(@RequestBody survey: SurveyPostRequestDto): ResponseEntity<Survey> {
         println("create survey: " + survey);
-        val createdSurvey = surveyRepository.save(survey);
+        val createdSurvey = surveyRepository.save(Survey(survey.name));
         return ResponseEntity.ok(createdSurvey);
     }
 

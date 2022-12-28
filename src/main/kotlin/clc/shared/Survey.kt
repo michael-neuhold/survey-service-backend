@@ -1,8 +1,12 @@
 package clc.shared
 
-import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
+import org.springframework.data.mongodb.core.mapping.MongoId
 
 @Document
-class Survey (@Id val id: Int,
-              val name: String)
+data class Survey (val name: String) {
+
+    @MongoId
+    lateinit var id: String
+
+}

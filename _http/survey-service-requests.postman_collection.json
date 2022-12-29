@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "7bad2b7a-15bd-40ce-b4a5-24648a6780c3",
+		"name": "CLC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13880071"
+	},
+	"item": [
+		{
+			"name": "[local] survey",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "[local] user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[local] Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"Michi\",\n    \"firstName\": \"Michael\",\n    \"lastName\": \"Neuhold\",\n    \"email\": \"michi.neuhold@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[local] Create New Survey",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"TestSurvey\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/survey",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"survey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[gcp] survey",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "[gcp] Create New Survey",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"name\": \"TestSurvey\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://clc3-survey-s2110454008.ew.r.appspot.com/survey",
+					"protocol": "https",
+					"host": [
+						"clc3-survey-s2110454008",
+						"ew",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"survey"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

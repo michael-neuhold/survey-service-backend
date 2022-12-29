@@ -14,5 +14,5 @@
 - [ ] Julian: Create Business Logic CRUD operations + analytics
 - [x] Michi: Create Postgres Db in GCP
 - [x] Michi: Create Dev Postgres Instance
-- [ ] Michi: Create Add Swagger Doc
-- [ ] Michi: Frontend Project
+- [x] Michi: Create Add Swagger Doc
+- [x] Michi: Frontend Project deployment

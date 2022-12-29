@@ -12,7 +12,7 @@
 - [x] Create Dev Mongo Instance
 - [ ] Julian: Create Document Types Survey and Response [see this](./_doc)
 - [ ] Julian: Create Business Logic CRUD operations + analytics
-- [ ] Michi: Create Postgres Db in GCP
-- [ ] Michi: Create Dev Postgres Instance
+- [x] Michi: Create Postgres Db in GCP
+- [x] Michi: Create Dev Postgres Instance
 - [ ] Michi: Create Add Swagger Doc
 - [ ] Michi: Frontend Project

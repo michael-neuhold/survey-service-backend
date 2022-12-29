@@ -1,7 +1,7 @@
-package clc.shared
+package clc.shared.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import lombok.NoArgsConstructor
 
 @NoArgsConstructor
-class SurveyPostRequestDto(@JsonProperty("name") val name: String)
+class CreateSurveyRequestDto(@JsonProperty("name") val name: String)

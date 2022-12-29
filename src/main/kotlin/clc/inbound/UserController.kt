@@ -1,20 +1,16 @@
 package clc.inbound
 
 import clc.outbound.UserRepository
-import clc.shared.User
 import clc.shared.dto.CreateUserRequestDto
 import clc.shared.dto.UserDto
 import clc.shared.mapper.DomainToDtoMapper
 import clc.shared.mapper.DtoToDomainMapper
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin(origins = ["*"])
 class UserController(private val userRepository: UserRepository) {
 
     @GetMapping

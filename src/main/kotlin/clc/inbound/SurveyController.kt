@@ -1,7 +1,6 @@
 package clc.inbound
 
 import clc.outbound.SurveyRepository
-import clc.shared.Survey
 import clc.shared.dto.CreateSurveyRequestDto
 import clc.shared.dto.SurveyDto
 import clc.shared.mapper.DomainToDtoMapper
@@ -29,9 +28,9 @@ class SurveyController(private val surveyRepository: SurveyRepository) {
     }
 
     @PostMapping
-    fun postSurvey(@RequestBody survey: CreateSurveyRequestDto): ResponseEntity<Survey> {
+    fun postSurvey(@RequestBody survey: CreateSurveyRequestDto): ResponseEntity<String> {
         val createdSurvey = surveyRepository.save(DtoToDomainMapper.from(survey))
-        return ok(createdSurvey)
+        return ok(createdSurvey.id)
     }
 
 }

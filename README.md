@@ -10,8 +10,8 @@
 
 ## Todos:
 - [x] Create Dev Mongo Instance
-- [ ] Julian: Create Document Types Survey and Response [see this](./_doc)
-- [ ] Julian: Create Business Logic CRUD operations + analytics
+- [x] Julian: Create Document Types Survey and Response [see this](./_doc)
+- [x] Julian: Create Business Logic CRUD operations + analytics
 - [x] Michi: Create Postgres Db in GCP
 - [x] Michi: Create Dev Postgres Instance
 - [x] Michi: Create Add Swagger Doc

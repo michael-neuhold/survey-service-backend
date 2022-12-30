@@ -1,8 +1,10 @@
 package clc.shared.mapper
 
 import clc.shared.Survey
+import clc.shared.SurveyResponse
 import clc.shared.User
 import clc.shared.dto.CreateSurveyRequestDto
+import clc.shared.dto.CreateSurveyResponseRequestDto
 import clc.shared.dto.CreateUserRequestDto
 
 sealed class DtoToDomainMapper {
@@ -19,6 +21,13 @@ sealed class DtoToDomainMapper {
 
         fun from(source: CreateUserRequestDto): User {
             return User(source.userName, source.firstName, source.lastName, source.email)
+        }
+
+        fun from(source: CreateSurveyResponseRequestDto): SurveyResponse {
+            return SurveyResponse(
+                    source.author,
+                    source.relatesTo,
+                    source.answers)
         }
     }
 

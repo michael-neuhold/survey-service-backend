@@ -1,8 +1,10 @@
 package clc.shared.mapper
 
 import clc.shared.Survey
+import clc.shared.SurveyResponse
 import clc.shared.User
 import clc.shared.dto.SurveyDto
+import clc.shared.dto.SurveyResponseDto
 import clc.shared.dto.UserDto
 
 sealed class DomainToDtoMapper {
@@ -20,6 +22,18 @@ sealed class DomainToDtoMapper {
                     source.description,
                     source.questions,
                     source.responses)
+        }
+
+        fun fromSurveyResponseList(source: List<SurveyResponse>): List<SurveyResponseDto> {
+            return source.map { sr -> fromSurveyResponse(sr) }.toList()
+        }
+
+        fun fromSurveyResponse(source: SurveyResponse): SurveyResponseDto {
+            return SurveyResponseDto(
+                    if (source.isIdInitialized()) source.id else "",
+                    source.author,
+                    source.relatesTo,
+                    source.answers)
         }
 
         fun fromUserList(source: List<User>): List<UserDto> {

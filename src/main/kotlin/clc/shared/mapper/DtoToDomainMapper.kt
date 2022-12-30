@@ -9,7 +9,12 @@ sealed class DtoToDomainMapper {
 
     companion object {
         fun from(source: CreateSurveyRequestDto): Survey {
-            return Survey(source.name)
+            return Survey(
+                    source.author,
+                    source.title,
+                    source.description,
+                    source.questions,
+                    emptyList())
         }
 
         fun from(source: CreateUserRequestDto): User {

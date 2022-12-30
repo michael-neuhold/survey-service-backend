@@ -13,7 +13,13 @@ sealed class DomainToDtoMapper {
         }
 
         fun fromSurvey(source: Survey): SurveyDto {
-            return SurveyDto(source.id, source.name)
+            return SurveyDto(
+                    if (source.isIdInitialized()) source.id else "",
+                    source.author,
+                    source.title,
+                    source.description,
+                    source.questions,
+                    source.responses)
         }
 
         fun fromUserList(source: List<User>): List<UserDto> {

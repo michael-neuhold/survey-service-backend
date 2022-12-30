@@ -6,9 +6,16 @@ import org.springframework.data.mongodb.core.mapping.MongoId
 
 @Builder
 @Document
-data class Survey (val name: String) {
+data class Survey(
+        val author: String,
+        val title: String,
+        val description: String,
+        val questions: List<Question>,
+        val responses: List<String>) {
 
     @MongoId
     lateinit var id: String
+
+    fun isIdInitialized() = ::id.isInitialized
 
 }

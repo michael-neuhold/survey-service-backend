@@ -1,7 +1,11 @@
 package clc.shared.dto
 
-import com.fasterxml.jackson.annotation.JsonProperty
+import clc.shared.Question
 
-
-data class SurveyDto(@JsonProperty("id") val id: String,
-                     @JsonProperty("name") val name: String)
+data class SurveyDto(
+        val id: String,
+        val author: String,
+        val title: String,
+        val description: String,
+        val questions: List<Question>,
+        val responses: List<String>)

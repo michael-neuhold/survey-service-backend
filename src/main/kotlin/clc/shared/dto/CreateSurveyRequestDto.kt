@@ -1,7 +1,11 @@
 package clc.shared.dto
 
-import com.fasterxml.jackson.annotation.JsonProperty
+import clc.shared.Question
 import lombok.NoArgsConstructor
 
 @NoArgsConstructor
-class CreateSurveyRequestDto(@JsonProperty("name") val name: String)
+data class CreateSurveyRequestDto(
+        val author: String,
+        val title: String,
+        val description: String,
+        val questions: List<Question>)

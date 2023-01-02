@@ -25,6 +25,8 @@ Fragen:
 - [ ] Julian: NoSql. Welchen Beitrag leistet NoSql in der vorliegenden Problemstellung?
 - [ ] Julian: Replikation. Wo nutzen Sie im gegenständlichen Projekt Daten-Replikation?
 - [ ] Michi & Julian: Kosten. Welche Kosten verursacht Ihre Lösung? Welchen monetären Vorteil hat diese Lösung gegenüber einer Nicht-Cloud-Lösung?
+
+===
 Frontend:
 - [ ] Julian: Show Evaluations on /survey (author == current user)
 - [ ] Michi: Show Questions + Answers if user already answered

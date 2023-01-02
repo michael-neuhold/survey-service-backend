@@ -15,8 +15,7 @@ sealed class DtoToDomainMapper {
                     source.author,
                     source.title,
                     source.description,
-                    source.questions,
-                    emptyList())
+                    source.questions)
         }
 
         fun from(source: CreateUserRequestDto): User {

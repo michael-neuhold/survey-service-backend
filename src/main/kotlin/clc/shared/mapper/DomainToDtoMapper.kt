@@ -20,8 +20,7 @@ sealed class DomainToDtoMapper {
                     source.author,
                     source.title,
                     source.description,
-                    source.questions,
-                    source.responses)
+                    source.questions)
         }
 
         fun fromSurveyResponseList(source: List<SurveyResponse>): List<SurveyResponseDto> {

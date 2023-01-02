@@ -11,8 +11,7 @@ data class Survey(
         val author: String,
         val title: String,
         val description: String,
-        val questions: List<Question>,
-        val responses: List<String>) {
+        val questions: List<Question>) {
 
     @MongoId
     lateinit var id: String

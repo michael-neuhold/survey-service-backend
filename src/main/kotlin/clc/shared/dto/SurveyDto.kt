@@ -7,5 +7,4 @@ data class SurveyDto(
         val author: String,
         val title: String,
         val description: String,
-        val questions: List<Question>,
-        val responses: List<String>)
+        val questions: List<Question>)

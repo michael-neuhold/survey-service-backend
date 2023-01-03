@@ -17,8 +17,8 @@
 - [x] Michi: Create Add Swagger Doc
 - [x] Michi: Frontend Project deployment
 
-===
-Fragen:
+
+### Fragen:
 - [ ] Michi: Automated Infrastructue Provisioning/(Infrastructure-as-Code). Wie wurde im vorliegenden Projekt Automated Infrastructure Provisioning berücksichtigt? 
 - [ ] Julian: Skalierbarkeit. Wie wurde im vorliegenden Projekt Skalierbarkeit berücksichtigt?
 - [ ] Michi: Ausfallssicherheit.  Wie wurde im vorliegenden Projekt Ausfallssicherheit berücksichtigt?
@@ -26,8 +26,8 @@ Fragen:
 - [ ] Julian: Replikation. Wo nutzen Sie im gegenständlichen Projekt Daten-Replikation?
 - [ ] Michi & Julian: Kosten. Welche Kosten verursacht Ihre Lösung? Welchen monetären Vorteil hat diese Lösung gegenüber einer Nicht-Cloud-Lösung?
 
-===
-Frontend:
-- [ ] Julian: Show Evaluations on /survey (author == current user)
-- [ ] Michi: Show Questions + Answers if user already answered
-- [ ] Julian: Show Form (Dropdown, Radio)
+
+### Frontend:
+- [x] Julian: Show Evaluations on /survey (author == current user)
+- [x] Michi: Show Questions + Answers if user already answered
+- [x] Julian: Show Form (Dropdown, Radio)

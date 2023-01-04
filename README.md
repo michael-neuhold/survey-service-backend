@@ -19,7 +19,7 @@
 
 
 ### Fragen:
-- [ ] Michi: Automated Infrastructue Provisioning/(Infrastructure-as-Code). Wie wurde im vorliegenden Projekt Automated Infrastructure Provisioning berücksichtigt? 
+- [x] Michi: Automated Infrastructue Provisioning/(Infrastructure-as-Code). Wie wurde im vorliegenden Projekt Automated Infrastructure Provisioning berücksichtigt? 
 - [ ] Julian: Skalierbarkeit. Wie wurde im vorliegenden Projekt Skalierbarkeit berücksichtigt?
 - [ ] Michi: Ausfallssicherheit.  Wie wurde im vorliegenden Projekt Ausfallssicherheit berücksichtigt?
 - [ ] Julian: NoSql. Welchen Beitrag leistet NoSql in der vorliegenden Problemstellung?

@@ -26,7 +26,7 @@ Powered by Julian Jany and Michael Neuhold
 - Spring Boot
 - Google Cloud Platform
 - Postgres
-- Mongo Atlas DB
+- MongoDB Atlas
 ---
 
 # Automated Infrastructure

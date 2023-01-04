@@ -2,15 +2,6 @@
 marp: true
 theme: default
 paginate: true
-backgroundColor: #fff
-
-<style>
-  :root {
-    --color-fg-default: #eff;
-    --color-canvas-default: #246;
-    /* ... */
-  }
-</style>
 ---
 
 <!--![bg left:40% 80%](https://marp.app/assets/marp.svg)-->
@@ -29,11 +20,33 @@ Powered by Julian Jany and Michael Neuhold
 
 ---
 
-# Automated Infrastructue
+# Tech Stack
+- Kotlin
+- Maven
+- Spring Boot
+- Google Cloud Platform
+- Postgres
+- Mongo Atlas DB
+---
+
+# Automated Infrastructure
+- [Terraform (Automate Infrastructure on Any Cloud)](https://www.terraform.io/)
+- Provider: Google
+- Resources:
+  - App Engine
+  - Postgres Instance
+  - Postgres DB Prod and Dev
+  - Postgres DB User
+  - Secret Manager
+  - Secrets for Postgres and Mongo DB
+  - IAM Service Account role assignment
+---
+
+![w:1000000](./terraform-workflow.svg)
 
 ---
 
-# Scaleability
+# Scalability
 
 ---
 

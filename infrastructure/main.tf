@@ -25,7 +25,12 @@ resource "google_sql_database_instance" "postgres-instance" {
 
   settings {
     tier = var.postgres-instance-tier
+    location_preference {
+        zone = var.postgres-instance-zone
+        secondary_zone = var.postgres-instance-secondary-zone
+    }
   }
+
   deletion_protection = false # should not be done - only for demo
 }
 

@@ -8,6 +8,8 @@ postgres-instance-user = "postgres"
 postgres-instance-name = "clc3-terraform-iac-postgres"
 postgres-instance-prod-db-name = "clc3-terraform-iac-postgres-prod"
 postgres-instance-dev-db-name = "clc3-terraform-iac-postgres-dev"
+postgres-instance-zone = "europe-west6-a"
+postgres-instance-secondary-zone = "europe-west6-b"
 
 secret-accessor-role = "roles/secretmanager.secretAccessor"
 project-service-account = "serviceAccount:clc3-terraform-iac@appspot.gserviceaccount.com"

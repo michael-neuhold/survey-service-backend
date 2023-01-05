@@ -48,6 +48,16 @@ variable "postgres-instance-dev-db-name" {
   description = "Google Cloud App Engine Postgres Dev DB Name"
 }
 
+variable "postgres-instance-zone" {
+  type        = string
+  description = "Google Cloud App Engine Postgres Instance Zone"
+}
+
+variable "postgres-instance-secondary-zone" {
+  type        = string
+  description = "Google Cloud App Engine Postgres Instance Secondary Zone"
+}
+
 variable "mongo-db-dev-instance-password" {
   type        = string
   description = "Mongo Atlas Dev DB Password"

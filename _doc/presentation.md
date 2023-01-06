@@ -13,10 +13,23 @@ Powered by Julian Jany and Michael Neuhold
 ---
 
 # About the project
+- Prototype for survey platform like Doodle
+- Survey represented as JSON Document
+- Users can participate
+- Survey owner can evaluate results
+- Course relevance:
+  - Google Cloud Platfrom
+  - NoSQL
+  - SQL 
+  - Scaleability & Reliability
+  - Infrastructure as Code
+  - Costs
 
 ---
 
 # Architecture
+
+![w:1000000](./architecture.svg)
 
 ---
 
@@ -27,6 +40,7 @@ Powered by Julian Jany and Michael Neuhold
 - Google Cloud Platform
 - Postgres
 - MongoDB Atlas
+- Terraform
 ---
 
 # Automated Infrastructure
@@ -51,6 +65,18 @@ Powered by Julian Jany and Michael Neuhold
 ---
 
 # Reliability
+- App Engine
+  - Single region
+  - Multiple instances -> multiple zones
+- Postgres DB (User Data)
+  - Single region
+  - Primary and secondary zone for `automatic failover`
+- MongoDB Atlas
+  - `Shared` Instance (Only for development)
+  - In production switch to `Dedicated` deployment
+    - elastic scalability
+    - multi-region
+    - advanced data distribution
 
 ---
 

@@ -1,7 +1,7 @@
 # Survey Survice
 
 ## Idea
-Within the CLC project a prototype for a survey platform (similar to Doodle) is implemented. For this purpose, the created survey templates as well as the corresponding answers are created in the form of JSON documents in a MongoDB. For simple metadata and user data, a Postgres database is also used. Spring Boot is used as the backend technology. Deployment is targeted via Google Cloud (in combination with https://spring.io/projects/spring-cloud-gcp). The backend provides a REST API, which can be accessed from a simple React Client.
+Within the CLC project a prototype for a survey platform (similar to Doodle) is implemented. For this purpose, the created survey templates as well as the corresponding answers are created in the form of JSON documents in a MongoDB. For simple metadata and user data, a Postgres database is also used. Spring Boot is used as the backend technology. Deployment is targeted via Google Cloud (in combination with [spring-cloud-gcp](https://spring.io/projects/spring-cloud-gcp)). The backend provides a REST API, which can be accessed from a simple React Client.
 
 ## Tech Stack
 - Kotlin

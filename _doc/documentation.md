@@ -117,3 +117,20 @@ For the sake of experimentation we also employ a `PostgreSQL` database for stori
 Traditional relational databases offer very little in terms of scalability compared to NoSQL databases. 
 The only adjustable parameter to increase compute capabilities is the VM-tier, which limits us to vertical scaling. 
 This is associated with several disadvantages: Vertical scaling 'quickly' reaches a limit beyond which further scaling is impossible, and these 'extreme' VMs are also quite costly.
+
+## Replication
+
+Both `MongoDB Atlas` and `PostgreSQL` are configured to utilize replica sets. 
+
+The `MongoDB Atlas` instance is configured as a replica set consisting of three nodes. 
+Backups are disabled because we are using the free tier; they are automatically enabled when selecting any other tier/plan.
+
+The `PostgreSQL` replica set consists of two nodes that are located in different regions. The `Cloud SQL Engine` automatically transitions to the secondary region in the case of an outage of the primary region. Backups are also enabled.
+
+## NoSQL
+
+`NoSQL` plays an important role in our architecture. 
+`NoSQL` enables horizontal scalability and high levels of fault-tolerance for the persistance 'layer' of our project. 
+This level of flexibility and scalability through the whole application can only be achieved by utilizing `NoSQL`. 
+One of the biggest drawbacks when compared to a relational database - the loss in consistency - can largely be mitigated by design decisions that fit the paradigm. 
+As is usual with `NoSQL` databases when designing the `schema` we chose to store redundant information to optimize for higher query performance and throughput.

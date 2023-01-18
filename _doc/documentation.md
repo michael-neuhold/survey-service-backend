@@ -56,6 +56,31 @@ When this application goes live, it would be switched to the Dedicated variant, 
 
 ## Scalability
 
+### Compute
+
+The survey backend utilizes the Google `App Engine`.
+The `App Engine` uses `automatic_scaling` by default. 
+There are several parameters that change the scaling heuristics. 
+These can be configured using the `app.yaml`, an example can be seen below.
+
+```Yaml
+# app.yaml
+
+# ...
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 5
+  max_instances: 100
+  min_pending_latency: 30ms
+  max_pending_latency: automatic
+  max_concurrent_requests: 50
+```
+
+Additionally two other forms of scaling are available, namely `basic_scaling` and `manual_scaling`.
+`basic_scaling` has only two parameters - `max_instances` and `idle_timeout` - which specify the maximum number of running instances of an app and the idle time after which an instance is stopped. 
+`manual_scaling` has only a single parameter - `instances` - which specifies the number of instances that continuously run regardless of the load level.
+
 ### Persistance
 
 As already mentioned in [Reliability](#reliability) our solution uses `MongoDB Atlas` to persist the application data. 

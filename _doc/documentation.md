@@ -44,3 +44,13 @@ Services in the app engine can only be deployed in a selected region. If multipl
 The Postgres instance for the user data was configured to be available in a region with a `primary and a secondary zone`. This allows `automatic failover` to the secondary zone. In addition, daily backups are performed.
 
 In this project the MongoDB Atlas was used. This provides `3 different models (Serverless, Dedicated, Shared)`, whereby only the Shared variant can be used free of charge. However, this should only be used for development and not for productive operation. In this project the shared variant was used with daily backups. When this application goes live, it would be switched to the Dedicated variant, which provides features such as elastic scalability and multi-cloud, `multi-region and advanced data distribution`. In addition, backup and retention policies can be set. 
+
+## Scalability
+
+|   | ![serverless](./MongoDB_Atlas/serverless.svg) Serverless | ![dedicated](./MongoDB_Atlas/dedicated.svg) Dedicated | ![shared](./MongoDB_Atlas/shared.svg) Shared |
+|---|---|---|---|
+| Usecase | development & testing; workloads with variable traffic | production; workloads with consistent traffic | learning & exploring |
+| Pricing | Consumption based | Tier based | Tier based |
+| Autoscaling <!-- = 'Elastic scalability' --> | :white_check_mark: compute & storage (seamless) | :white_check_mark: compute & storage (highly configurable) | - |
+| Uptime SLA | - | :white_check_mark: 99.995% | - |
+| Backups | :white_check_mark: 2x per day | :white_check_mark: advanced <!-- Configurable snapshot and retention policies; On-demand snapshots; Point-in-time recovery --> | :white_check_mark: daily (not for free tier) |

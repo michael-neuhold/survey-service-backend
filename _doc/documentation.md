@@ -49,8 +49,8 @@ In this project the MongoDB Atlas was used. This provides `3 different models (S
 
 |   | ![serverless](./MongoDB_Atlas/serverless.svg) Serverless | ![dedicated](./MongoDB_Atlas/dedicated.svg) Dedicated | ![shared](./MongoDB_Atlas/shared.svg) Shared |
 |---|---|---|---|
-| Usecase | development & testing; workloads with variable traffic | production; workloads with consistent traffic | learning & exploring |
-| Pricing | Consumption based | Tier based | Tier based |
+| Usecase | workloads with variable traffic (development & testing) | workloads with consistent traffic (production) | learning & exploring |
+| Pricing | consumption based | tier based | tier based (including free tier) |
 | Autoscaling <!-- = 'Elastic scalability' --> | :white_check_mark: compute & storage (seamless) | :white_check_mark: compute & storage (highly configurable) | - |
 | Uptime SLA | - | :white_check_mark: 99.995% | - |
-| Backups | :white_check_mark: 2x per day | :white_check_mark: advanced <!-- Configurable snapshot and retention policies; On-demand snapshots; Point-in-time recovery --> | :white_check_mark: daily (not for free tier) |
+| Backups | :white_check_mark: twice per day | :white_check_mark: advanced configuration <!-- Configurable snapshot and retention policies; On-demand snapshots; Point-in-time recovery --> | :white_check_mark: daily (except free tier) |

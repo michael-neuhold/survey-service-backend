@@ -125,7 +125,7 @@ Both `MongoDB Atlas` and `PostgreSQL` are configured to utilize replica sets.
 The `MongoDB Atlas` instance is configured as a replica set consisting of three nodes. 
 Backups are disabled because we are using the free tier; they are automatically enabled when selecting any other tier/plan.
 
-The `PostgreSQL` replica set consists of two nodes that are located in different regions. The `Cloud SQL Engine` automatically transitions to the secondary region in the case of an outage of the primary region. Backups are also enabled.
+The `PostgreSQL` replica set consists of two nodes that are located in different zones. The `Cloud SQL Engine` automatically transitions to the secondary zone in the case of an outage of the primary zone. Backups are also enabled.
 
 ## NoSQL
 

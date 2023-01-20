@@ -189,6 +189,7 @@ As is usual with `NoSQL` databases when designing the `schema` we chose to store
 ---
 
 # Costs
+[Cost Table](https://docs.google.com/spreadsheets/d/114aw43L75fniRcW9A-0cHi2fMMBBGff7zwSIOP3_CDc/edit?usp=sharing)
 
 ---
 

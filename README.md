@@ -6,7 +6,7 @@
 - Paste mongo prod password as value
 - Generate default login for secret manager: `gcloud auth application-default login`
 - Execution with spring prod profile connects to prod db
-- In GCP -> IAM -> <projectname>@appspot.gserviceacount.com -> add new role "Secret Manager Secret Accessor" otherwise secret can not be read
+- In GCP &rarr; IAM &rarr; <projectname>@appspot.gserviceacount.com &rarr; add new role "Secret Manager Secret Accessor" otherwise secret can not be read
 
 ## Todos:
 - [x] Create Dev Mongo Instance
@@ -20,12 +20,12 @@
 
 ### Fragen:
 - [x] Michi: Automated Infrastructue Provisioning/(Infrastructure-as-Code). Wie wurde im vorliegenden Projekt Automated Infrastructure Provisioning berücksichtigt? 
-- [ ] Julian: Skalierbarkeit. Wie wurde im vorliegenden Projekt Skalierbarkeit berücksichtigt?
+- [x] Julian: Skalierbarkeit. Wie wurde im vorliegenden Projekt Skalierbarkeit berücksichtigt?
 - [x] Michi: Ausfallssicherheit.  Wie wurde im vorliegenden Projekt Ausfallssicherheit berücksichtigt?
-- [ ] Julian: NoSql. Welchen Beitrag leistet NoSql in der vorliegenden Problemstellung?
-- [ ] Julian: Replikation. Wo nutzen Sie im gegenständlichen Projekt Daten-Replikation?
-- [ ] Michi & Julian: Kosten. Welche Kosten verursacht Ihre Lösung? Welchen monetären Vorteil hat diese Lösung gegenüber einer Nicht-Cloud-Lösung?
-        -> https://cloud.google.com/products/calculator
+- [x] Julian: NoSql. Welchen Beitrag leistet NoSql in der vorliegenden Problemstellung?
+- [x] Julian: Replikation. Wo nutzen Sie im gegenständlichen Projekt Daten-Replikation?
+- [x] Michi & Julian: Kosten. Welche Kosten verursacht Ihre Lösung? Welchen monetären Vorteil hat diese Lösung gegenüber einer Nicht-Cloud-Lösung?
+        &rarr; https://cloud.google.com/products/calculator
 
 ### Frontend:
 - [x] Julian: Show Evaluations on /survey (author == current user)

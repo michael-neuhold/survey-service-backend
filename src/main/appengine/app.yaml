@@ -1,6 +1,6 @@
 runtime: java17
 instance_class: B2
 env_variables:
-  SPRING_PROFILES_ACTIVE: "prod" # "terraprod"
+  SPRING_PROFILES_ACTIVE: "terraprod"
 manual_scaling:
   instances: 2

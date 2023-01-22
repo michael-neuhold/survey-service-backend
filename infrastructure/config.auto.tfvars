@@ -1,4 +1,4 @@
-project-id = "clc3-terraform-iac"
+project-id = "clc3-survey-demo"
 app-location = "europe-west6"
 
 postgres-instance-tier = "db-f1-micro"
@@ -12,7 +12,7 @@ postgres-instance-zone = "europe-west6-a"
 postgres-instance-secondary-zone = "europe-west6-b"
 
 secret-accessor-role = "roles/secretmanager.secretAccessor"
-project-service-account = "serviceAccount:clc3-terraform-iac@appspot.gserviceaccount.com"
+project-service-account = "serviceAccount:clc3-survey-demo@appspot.gserviceaccount.com"
 
 postgres-instance-secret-id = "postgres-instance-secret"
 mongo-db-dev-instance-secret-id = "mongo-db-dev-instance-secret"

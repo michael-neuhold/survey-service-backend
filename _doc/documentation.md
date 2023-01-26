@@ -135,5 +135,11 @@ This level of flexibility and scalability through the whole application can only
 One of the biggest drawbacks when compared to a relational database - the loss in consistency - can largely be mitigated by design decisions that fit the paradigm. 
 As is usual with `NoSQL` databases when designing the `schema` we chose to store redundant information to optimize for higher query performance and throughput.
 
+## Spring GCP Integration
+- Project Integration
+- Secret Manager
+
+Convenient way to access secrets: `${sm://projects/662427771210/secrets/survey-postgres-db-password}`
+
 ## Costs
 [Cost Table](https://docs.google.com/spreadsheets/d/114aw43L75fniRcW9A-0cHi2fMMBBGff7zwSIOP3_CDc/edit?usp=sharing)

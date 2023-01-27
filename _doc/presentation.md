@@ -194,3 +194,6 @@ As is usual with `NoSQL` databases when designing the `schema` we chose to store
 ---
 
 # Demo Time
+
+- [Backend](https://clc3-survey-demo.oa.r.appspot.com/swagger-ui/index.html)
+- [Frontend](https://app-dot-clc3-survey-demo.oa.r.appspot.com/)

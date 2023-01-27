@@ -138,6 +138,7 @@ As is usual with `NoSQL` databases when designing the `schema` we chose to store
 ## Spring GCP Integration
 - Project Integration
 - Secret Manager
+- Disadvantage: Due to the Spring GCP Package we could not use Spring 3.0 so we were not able to build a native image.
 
 Convenient way to access secrets: `${sm://projects/662427771210/secrets/survey-postgres-db-password}`
 
